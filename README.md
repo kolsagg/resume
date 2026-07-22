@@ -1,6 +1,6 @@
 ## Resume
 
-This repository contains my resume in LaTeX. Every time a push is made, the PDF is built and committed to the repository by GitHub Actions, and to my personal website.
+This repository contains my resume in LaTeX. Every time a push is made, the PDF is built and committed to the repository by GitHub Actions.
 
 ### Local requirements
 
@@ -12,7 +12,7 @@ This repository contains my resume in LaTeX. Every time a push is made, the PDF 
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/onurravli/resume.git
+git clone https://github.com/kolsagg/resume.git
 cd resume
 ```
 
@@ -32,11 +32,9 @@ git commit -m "docs: update resume.tex"
 git push
 ```
 
-5. To push resume to your other repositories, you need to set `PAT_TOKEN` in your `resume` repository's action secrets section.
-
 ### Output
 
-The generated PDF will be available as `Onur_Ravli_Resume.pdf` in the repository root. You can find the latest version [here](./Onur_Ravli_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
+The generated PDF will be available as `Emre_Kolunsag_Resume.pdf` in the repository root. You can find the latest version [here](./Emre_Kolunsag_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
 
 ### License
 
