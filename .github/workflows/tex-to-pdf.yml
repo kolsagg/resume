@@ -24,6 +24,7 @@ jobs:
       - name: Compile LaTeX to PDF
         run: |
           pdflatex -jobname=Emre_Kolunsag_Resume resume.tex
+          pdflatex -jobname=Emre_Kolunsag_Resume_EN resume_en.tex
 
       - name: Commit and push PDF
         env:
@@ -31,6 +32,6 @@ jobs:
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
-          git add Emre_Kolunsag_Resume.pdf
+          git add Emre_Kolunsag_Resume.pdf Emre_Kolunsag_Resume_EN.pdf
           git commit -m "docs: update resume" || echo "No changes to commit"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
