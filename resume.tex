@@ -2,6 +2,7 @@
 \pagenumbering{gobble}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -13,8 +14,9 @@
 \begin{center}
     \begin{minipage}{\textwidth}
         \centering
-        {\LARGE\textbf{Emre Kolunsağ}} \hspace{2pt} {\LARGE{Jr. SAP ABAP Danışmanı / Yazılım Mühendisi}}\\[10pt]
+        {\LARGE\textbf{Emre Kolunsağ}} \hspace{2pt} {\LARGE{SAP ABAP Danışmanı / Yazılım Mühendisi}}\\[10pt]
         İstanbul, Türkiye \textbullet\
+        \href{tel:+905348349813}{+90 534 834 98 13} \textbullet\
         \href{mailto:emrekolunsag@gmail.com}{emrekolunsag@gmail.com} \textbullet\
         \href{https://linkedin.com/in/emrekolunsag}{linkedin.com/in/emrekolunsag} \textbullet\
         \href{https://github.com/kolsagg}{github.com/kolsagg}
@@ -36,7 +38,7 @@ proaktif bir problem çözme yaklaşımı getirmektedir.
 \textbf{Yabancı Dil:} Türkçe (Ana dili), İngilizce (Orta Seviye)
 \section{İş Deneyimi}
 \textbf{ConcentIT. \textit{(İstanbul, Türkiye)}}\\
-\textit{Jr. SAP ABAP Danışmanı / Geliştirici} \hfill Aralık 2024 -- Halen
+\textit{SAP ABAP Danışmanı / Geliştirici} \hfill Aralık 2024 -- Halen
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
     \item SAP S/4HANA geçiş ve greenfield uyarlama projelerinde müşteri gereksinimlerine uygun özel ABAP programları, raporlar ve iyileştirmeler (enhancements) geliştirildi.
     \item Müşteri süreçlerindeki sistem kesintilerini en aza indirmek için ABAP kodlarında hata ayıklama (debugging), performans optimizasyonu ve teknik destek süreçleri yürütüldü.
@@ -100,6 +102,26 @@ proaktif bir problem çözme yaklaşımı getirmektedir.
     \item Canlı sistemdeki teknik sorunlar debugging ile çözüldü
 \end{itemize}
 \section{Diğer Yazılım Projeleri}
+\textbf{Fiş OCR Tabanlı Masraf Yönetim Sistemi (Web ve Mobil)} \hfill \textit{Python, FastAPI, PostgreSQL, OpenAI GPT-4o, Flutter}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Fiş görsellerinden kalem, KDV oranı kırılımı ve toplam tutarları çıkaran GPT-4o Vision tabanlı OCR servisi ve OpenCV görüntü ön işleme katmanı geliştirildi
+    \item PostgreSQL Row-Level Security ile çok kiracılı (multi-tenant) FastAPI backend tasarlandı; Flyway migration, audit trigger ve JWT kimlik doğrulama uygulandı
+    \item SAP'den toplu fiş verisi (XSTRING) alarak işleyen REST endpoint ile SAP -- OCR servisi entegrasyonu sağlandı
+    \item Flutter (Riverpod, go\_router, Clean Architecture) ile TR/EN mobil uygulama ve Excel/PDF dışa aktarım; Tailwind ve vanilla JS ile web arayüzü geliştirildi
+    \item Windows Server üzerinde IIS ARR reverse proxy arkasında NSSM servisi olarak dağıtım yapıldı
+\end{itemize}
+\textbf{Yapay Zeka Destekli Sosyal Medya İçerik Otomasyonu} \hfill \textit{Next.js, Prisma, PostgreSQL, Sharp, node-cron}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item Marka kimliğinden (logo, renk paleti) yola çıkarak takvim bazlı görsel ve metin üreten, insan onayı sonrası LinkedIn/Instagram/Facebook'a otomatik yayınlayan içerik hattı tasarlandı (PRD, mimari, birim ekonomisi)
+    \item Görsel üretim sağlayıcısını soyutlayan adaptör katmanı, Sharp ile logo/metin kompozisyonu ve 24 saat/7 gün/30 gün performans metriklerinin bir sonraki üretim döngüsünü besleyen geri bildirim mekanizması tasarlandı
+    \item Türkiye özel gün takvimi (Hicri tarihler dahil) ile otomatik özel gün içeriği tetikleme kurgulandı
+\end{itemize}
+\textbf{Ticket Odaklı Yapay Zeka Yazılım Üretim Hattı (KOLSAG Software Factory)} \hfill \textit{TypeScript, Claude Agent SDK, SQLite, Git}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+    \item İş kaydını (ticket) izole git worktree içinde Claude Agent SDK ile kapılı (gated) pipeline'dan geçirip incelemeye hazır branch üreten yerel motor geliştirildi
+    \item İnsan onayının yalnızca plan ve diff kapılarında alındığı, durumun SQLite'ta kalıcı tutulduğu ve çökme sonrası güvenli devam edebilen mimari tasarlandı; kararlar 7 ADR ile belgelendi
+    \item Test/lint/build adımları izlenen alt süreçler olarak çalıştırıldı; ajan araç erişimi tek denetim noktası üzerinden kısıtlandı, çalıştırma başına maliyet takibi eklendi
+\end{itemize}
 \textbf{Yapay Zeka Destekli Finans Takip Mobil Uygulaması} \hfill \textit{Flutter, Python, Supabase, Ollama}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
     \item QR fiş tarama ve yapay zeka destekli öneriler sunan harcama takip mobil uygulaması geliştirildi
